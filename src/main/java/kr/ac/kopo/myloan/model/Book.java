@@ -7,14 +7,14 @@ public class Book {
     private Long bookId;
     private String title;
     private String author;
-    private String ISBN;
+    private String isbn;
     private String publisher;
     private Date pubDate;
     private String category;
     private String description;
-
     private String loanAt;
-    private File cover;
+    private Long fileId;
+    private String useAt;
 
     public Long getBookId() {
         return bookId;
@@ -40,12 +40,12 @@ public class Book {
         this.author = author;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public String getPublisher() {
@@ -88,11 +88,19 @@ public class Book {
         this.loanAt = loanAt;
     }
 
-    public File getCover() {
-        return cover;
+    public Long getFileId() {
+        return fileId;
     }
 
-    public void setCover(File cover) {
-        this.cover = cover;
+    public void setFileId(Long fileId) {
+        this.fileId = fileId;
+    }
+
+    public String getUseAt() {
+        return useAt;
+    }
+
+    public void setUseAt(String useAt) {
+        this.useAt = useAt;
     }
 }

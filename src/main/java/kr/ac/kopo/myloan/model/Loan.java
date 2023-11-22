@@ -9,7 +9,7 @@ public class Loan {
     private Date loanDate;
     private Date dueDate;
     private Date returnDate;
-    private String loanStatus;
+    private String useAt;
 
     public Long getLoanId() {
         return loanId;
@@ -59,11 +59,11 @@ public class Loan {
         this.returnDate = returnDate;
     }
 
-    public String getLoanStatus() {
-        return loanStatus;
+    public String getUseAt() {
+        return useAt;
     }
 
-    public void setLoanStatus(String loanStatus) {
-        this.loanStatus = loanStatus;
+    public void setUseAt(String useAt) {
+        this.useAt = useAt;
     }
 }

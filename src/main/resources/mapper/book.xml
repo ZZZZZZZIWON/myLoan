@@ -2,7 +2,20 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="book">
-
+    <select id="list" resultType="Book">
+        SELECT book_id
+        ,title
+        , author
+        , isbn
+        , publisher
+        , pub_date
+        , category
+        , description
+        , loan_at
+        , file_id
+        , use_at
+        FROM book
+    </select>
 
 
 </mapper>
